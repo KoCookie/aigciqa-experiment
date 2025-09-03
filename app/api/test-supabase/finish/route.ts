@@ -1,4 +1,5 @@
 // app/api/finish/route.ts
+/*临时注释掉
 import { NextResponse } from 'next/server'
 import { supabaseServer } from '@/lib/supabaseServer'
 
@@ -20,3 +21,20 @@ export async function POST(req: Request) {
 
   return NextResponse.json({ status: 'finished' })
 }
+  */
+ //临时测试！！！
+ // app/api/test-supabase/finish/route.ts
+export async function GET() {
+  return new Response(JSON.stringify({ success: true }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+export async function POST() {
+  return new Response(JSON.stringify({ success: true }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+

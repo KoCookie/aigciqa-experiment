@@ -1,5 +1,5 @@
 // app/api/submit/route.ts
-import { NextResponse } from 'next/server'
+/*import { NextResponse } from 'next/server'
 import { supabaseServer } from '@/lib/supabaseServer'
 
 export async function POST(req: Request) {
@@ -24,4 +24,20 @@ export async function POST(req: Request) {
   }
 
   return NextResponse.json({ status: 'ok' })
+}*/
+//test纯测试
+// app/api/test-supabase/submit/route.ts
+export async function POST() {
+  return new Response(JSON.stringify({ success: true, message: "Test submit OK" }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
 }
+
+export async function GET() {
+  return new Response(JSON.stringify({ success: true, message: "Test submit GET OK" }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+

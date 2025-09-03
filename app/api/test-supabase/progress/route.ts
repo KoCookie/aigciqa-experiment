@@ -1,5 +1,5 @@
 // app/api/progress/route.ts
-import { NextResponse } from 'next/server'
+/*import { NextResponse } from 'next/server'
 import { supabaseServer } from '@/lib/supabaseServer'
 
 export async function GET(req: Request) {
@@ -34,4 +34,19 @@ export async function GET(req: Request) {
     completed,
     next: next?.[0]?.id || null
   })
+}
+*/
+//test纯测试
+export async function GET() {
+  return new Response(JSON.stringify({ success: true, progress: 0 }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
+export async function POST() {
+  return new Response(JSON.stringify({ success: true, progress: 0 }), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
 }
